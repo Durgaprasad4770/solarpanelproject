@@ -1,0 +1,170 @@
+<DOCTYPE html>
+<html lang="en">    
+<head>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left">
+                <select name="language" class="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Telugu">Telugu</option>
+                </select>
+                <button><a href="solar subsidy funding website.html">Home</a></button>
+                <button><a href="ABOUT.html">About</a></button>
+                <button><a href="BENIFITS.html">Benifits</a></button>
+                <button><a href="Contact us .html">Contact us</a></button>
+
+            </div>
+        </nav> 
+<style>
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    font-family: 'Helvetica Neue',Arial, Helvetica, sans-serif;
+}
+
+.container::before{
+    content: "";
+    background: url(solar\ panel.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+    padding: auto;
+}
+.container .input .label{
+    align-items: center;
+}
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    display: flex;
+    height: 100px;
+    float: right;
+    position: absolute;
+    left: 30px;
+}
+.container .navbar .left .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+    
+}
+.container .navbar .left .language option{
+    background-color:black;
+}
+.container .navbar .left button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: wheat;
+    cursor: pointer;
+    outline:none;
+    border-radius: 2px;
+    border: none;
+    margin-left: 20px;
+}
+.container .navbar .left button a{
+    text-decoration: none;
+    color: black;
+
+}
+.container .navbar .left button:hover{
+ background-color: whitesmoke;
+}
+        form {
+            max-width: 400px;
+            max-height: 400px;
+            margin: 40px auto;
+            padding: 10px;
+            background: wheat;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            color: black;
+        }
+
+        input[type="submit"] {
+            background-color: #e8491d;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("All fields are required.");
+                return false;
+            }
+
+            // Additional validation logic can be added here.
+
+            return true;
+        }
+    </script>
+</body>
+</html>
